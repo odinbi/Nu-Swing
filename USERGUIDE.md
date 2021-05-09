@@ -171,7 +171,7 @@ public class MyShape {
 
 The ressult of running `MyShape`:
 
-[MyShape run](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/MyShape.PNG)
+![MyShape run](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/MyShape.PNG)
 
 ## Making a Button
 
@@ -217,7 +217,7 @@ public class ButtonExample {
 
 Result of running `ButtonExample`:
 
-[ButtonExample](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/ButtonExample.PNG)
+![ButtonExample](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/ButtonExample.PNG)
 
 When pressed:
 
@@ -268,6 +268,99 @@ public class TextfieldExample {
 
 Running `TextfieldExample` result:
 
-[TextfieldExample](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/TextfieldExample.png)
+![TextfieldExample](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/TextfieldExample.png)
 
 ## Moving an Object
+There are mainly two ways of moving an object in *Nu-Swing*, either call `move` on the object, or move the `NuPoint` the object is located on. To move a `NuShape` there is one method, `move`, that takes a `vector` from the current location of the object to the new location. For `NuPoint` there are two methods, `move` and `moveTo`. `move` is the same as for `NuShape`, `moveTo` however, takes a `coordinate` and sets the `NuPoint`'s location to that `coordinate`. 
+
+`move` and `moveTo` can be used to achieve the same result when objects such as `NuCircle`, which only contain one `NuPoint` as positional reference, has the same `NuPoint` referenced.
+
+`move` the `NuCircle` to a new location when the `NuButton` is pressed with `NuLine` attached:
+
+```java
+import NuSwing.*;
+
+public class MoveCircle {
+   public static void main(String[] args){
+      NuWindow nw = new NuWindow("Move Circle", 400, 400);
+      NuButton nb = new NuButton("move", 
+         new NuPoint(20, 100), 100, 50);
+      NuPoint shared = new NuPoint(250, 200);
+      NuCircle nc = new NuCircle(100, shared,
+         NuColor.GRAY);
+      NuLine nl = new NuLine(new NuPoint(150, 200),
+         shared, NuColor.BLACK);
+
+      nb.setAction(() -> nc.move(0, 100));
+      nw.addComponent(nb); nw.addComponent(nc);
+      nw.addComponent(nl);
+   }
+}
+```
+
+![MoveCircle](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/MoveCircle.png)
+
+As seen above, only the `NuPoint` that is also referenced in `nc` is moved.
+
+Same example, but `move` is called on `NuLine` instead:
+
+```java
+import NuSwing.*;
+
+public class MoveLine {
+   public static void main(String[] args){
+      NuWindow nw = new NuWindow("Move Line", 400, 400);
+      NuButton nb = new NuButton("move", 
+         new NuPoint(20, 100), 100, 50);
+      NuPoint shared = new NuPoint(250, 200);
+      NuCircle nc = new NuCircle(100, shared,
+         NuColor.GRAY);
+      NuLine nl = new NuLine(new NuPoint(150, 200),
+         shared, NuColor.BLACK);
+
+      nb.setAction(() -> nl.move(0, 100));
+      nw.addComponent(nb); nw.addComponent(nc);
+      nw.addComponent(nl);
+   }
+}
+```
+
+![MoveLine](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/MoveLine.png)
+
+As seen in this example, both the `nl` and `nc` moves when `move` is called on `nl`.
+
+## NuUtils
+
+`NuUtils` is a class that contains a handfull of `static` utility methods that may be helpfull for the user while using *Nu-Swing*, but not directly related to the GUI API. The methods are: `sleep`, `fileSelector`, `multiFileSelectore` and `fileSaver`. Since all the methods are `static`, the user does not need to create a `NuUtils` object.
+
+The `sleep` method, will allow the user to let a `thread` `sleep` for a given amount of `milliseconds` without having to consider a `try catch` block for the java `Thread` class' `sleep` method.
+
+```java
+// let calling thread sleep for 1 second (1000 ms)
+NuUtils.sleep(1000);
+```
+
+The other methods, are all related to `opening` or `saving` files. Both `fileSelector` and `multiFileSelector` require the `file` selected to exist, where as `fileSaver` may create a new `file` if selected filename does not resolve in an existing `file`.
+
+```java
+// fileSelector returns 1 file
+File file = NuUtils.fileSelector();
+
+// multiFileSelector returns an array of files
+File[] files = NuUtils.multiFileSelector();
+
+// fileSaver returns 1 file
+File save = NuUtils.fileSaver();
+```
+
+Result of calling `NuUtlis.fileSelector()`.
+
+![fileSelectorExample](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/fileSelector.png)
+
+## API Overview
+Bellow is a comprehensive table of all *Nu-Swing* classes and methods.
+
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+: NuWindow : |||
+NuWindow | NuWindow | int x, int y | constructs a NuWindow object
