@@ -147,7 +147,7 @@ There are six concrete `shapes` in *Nu-Swing*:
 * `NuCircle`
 * `NuRectangle` 
 * `NuPolygon`
-* `NuText`.
+* `NuText`
 
 ### How to Add a Shape to a NuWindow
 
