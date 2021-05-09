@@ -67,7 +67,7 @@ This will of course work if the `jar` file is in a totally different folder, how
 #### Common Error Messages
 When coding, at some point one inevitably encounters some `errors` while either trying to compile or run a program. As such, it might be nice to get a little overview of some `errors` one might encounter while using the `-cp` option.
 
-Some expected error messages related to compilation:
+##### Some expected error messages related to compilation:
 
 ```
 # No -cp option:
@@ -91,7 +91,7 @@ MyWindow.java:1: error: package NuSwing does not exist
 javac: no source files
 ```
 
-Some expected error messages related to running:
+##### Some expected error messages related to running:
 
 ```
 # Forgot to add path to MyWindow (.): 
