@@ -383,7 +383,7 @@ Method | Return Type | Arguments | Description
 remove | boolean | none | removes NuCompoent from NuWindow
 setVisible | void | boolean visible | sets visibility of NuComponent
 
-#### NuShape (abstract)
+#### NuShape (abstract) - (NuComponent)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 setColor | void | NuColor color | sets color of NuShape
@@ -392,7 +392,7 @@ setLineWidth | void | int pts | sets outline width of NuShape
 rotate | void | float degrees, NuPoint point | rotates NuShape around point
 move | void | float x, float y | moves NuShape
 
-##### NuPoint
+##### NuPoint - (NuShape)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 NuPoint | NuPoint | float x, float y | constructs a NuPoint object
@@ -400,7 +400,7 @@ x | float | none | returns the x coordinate
 y | float | none | returns the y coordinate
 moveTo | void | float x, float y | sets new location of NuPoint
 
-##### NuLine
+##### NuLine - (NuShape)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 NuLine | NuLine | NuPoint a, NuPoint b | constructs a NuLine object
@@ -408,27 +408,27 @@ NuLine | NuLine | NuPoint a, NuPoint b, int lineWidth | =
 NuLine | NuLine | NuPoint a, NuPoint b, NuColor color | =
 NuLine | NuLine | NuPoint am Nupoint b, Nucolor color, int lineWidth | =
 
-##### NuCircle
+##### NuCircle - (NuShape)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 NuCircle | NuCircle | float radius | constructs a NuCircle object
 NuCircle | NuCircle | float radius, NuPoint point | =
 NuCircle | NuCircle | float radius, NuPoint point, NuColor color | =
 
-##### NuRectangle
+##### NuRectangle - (NuShape)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 NuRectangle | NuRectangle | float width, float height | constructs a NuRectangle object
 NuRectangle | NuRectangle | float width, float height, NuPoint point | =
 NuRectangle | NuRectangle | float width, float height, NuPoint point, NuColor color | =
 
-##### NuPolygon
+##### NuPolygon - (NuShape)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 NuPolygon | NuPolygon | NuPoint[] points | constructs a NuPolygon object
 NuPolygon | NuPolygon | NuPoint[] points, NuColor color | =
 
-##### NuText
+##### NuText - (NuShape)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 NuText | NuText | String text | constructs a NuText object
@@ -438,14 +438,14 @@ NuText | NuText | String text, int pts, NuPoint point | =
 setFontSize | void | int pts | sets font size of NuPoint
 setText | void | String text | sets texts of NuPoint
 
-#### NuButton
+#### NuButton - (NuComponent)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 NuButton | NuButton | String name, NuPoint point, int width, int height | constructs a NuButton object
 NuButton | NUButton | String name, NuPoint point, int width, int height, Runnable action | =
 setAction | void | Runnable action | sets action of NuButton
 
-#### NuTextfield
+#### NuTextfield - (NuComponent)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 NuTextfield | NuTextfield | String text, NuPoint point | constructs a NuTextfield object
@@ -453,7 +453,7 @@ NuTextfield | NuTextfield | String text, NuPoint point, int width, int height | 
 setText | void | String text | sets text of NuTextfield
 getText | String | none | retuns text from NuTextfield
 
-### NuUtils
+### NuUtils - (NuComponent)
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 sleep | void | int ms | sleeps thread for ms milliseconds
