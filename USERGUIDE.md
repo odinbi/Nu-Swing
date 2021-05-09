@@ -23,7 +23,7 @@
  <details>
   <summary>Making a Shape</summary>
 
-  * [Making a Shape](#making-a-shape) 
+ * [Making a Shape](#making-a-shape) 
    + [What Shapes Exist?](#what-shapes-exist-)
    + [How to Add a Shape to a NuWindow](#how-to-add-a-shape-to-a-nuwindow)
 
