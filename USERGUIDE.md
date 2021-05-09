@@ -358,9 +358,106 @@ Result of calling `NuUtlis.fileSelector()`.
 ![fileSelectorExample](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/fileSelector.png)
 
 ## API Overview
-Bellow is a comprehensive table of all *Nu-Swing* classes and methods.
+Bellow is a comprehensive overview of all *Nu-Swing* classes and methods.
 
+### Nuwindow
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
-: NuWindow : |||
 NuWindow | NuWindow | int x, int y | constructs a NuWindow object
+NuWindow | NuWindow | String title, int x, int y | =
+NuWindow | NuWindow | int x, int y, NuColor color | =
+NuWindow | NuWindow | String title, int x, int y, NuColor color | =
+addComponent | void | NuComponent component | adds compoenent to the element list
+setColor | void | NuColor color | sets the color of NuWindow
+remove | boolean | NuCompoenent component | removes component from the element list
+
+### NuColor
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuColor | NuColor | int red, int green, int blue | constructs a NuColor object
+NuColor | NuColor | int hexRGB | =
+
+### NuComponent (abstract)
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+remove | boolean | none | removes NuCompoent from NuWindow
+setVisible | void | boolean visible | sets visibility of NuComponent
+
+#### NuShape (abstract)
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+setColor | void | NuColor color | sets color of NuShape
+setOutlineColor | void | NuColor color | sets outline color of NuShape
+setLineWidth | void | int pts | sets outline width of NuShape
+rotate | void | float degrees, NuPoint point | rotates NuShape around point
+move | void | float x, float y | moves NuShape
+
+##### NuPoint
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuPoint | NuPoint | float x, float y | constructs a NuPoint object
+x | float | none | returns the x coordinate
+y | float | none | returns the y coordinate
+moveTo | void | float x, float y | sets new location of NuPoint
+
+##### NuLine
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuLine | NuLine | NuPoint a, NuPoint b | constructs a NuLine object
+NuLine | NuLine | NuPoint a, NuPoint b, int lineWidth | =
+NuLine | NuLine | NuPoint a, NuPoint b, NuColor color | =
+NuLine | NuLine | NuPoint am Nupoint b, Nucolor color, int lineWidth | =
+
+##### NuCircle
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuCircle | NuCircle | float radius | constructs a NuCircle object
+NuCircle | NuCircle | float radius, NuPoint point | =
+NuCircle | NuCircle | float radius, NuPoint point, NuColor color | =
+
+##### NuRectangle
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuRectangle | NuRectangle | float width, float height | constructs a NuRectangle object
+NuRectangle | NuRectangle | float width, float height, NuPoint point | =
+NuRectangle | NuRectangle | float width, float height, NuPoint point, NuColor color | =
+
+##### NuPolygon
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuPolygon | NuPolygon | NuPoint[] points | constructs a NuPolygon object
+NuPolygon | NuPolygon | NuPoint[] points, NuColor color | =
+
+##### NuText
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuText | NuText | String text | constructs a NuText object
+NuText | NuText | String text, NuPoint point | =
+NuText | NuText | String text, int pts | =
+NuText | NuText | String text, int pts, NuPoint point | =
+setFontSize | void | int pts | sets font size of NuPoint
+setText | void | String text | sets texts of NuPoint
+
+#### NuButton
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuButton | NuButton | String name, NuPoint point, int width, int height | constructs a NuButton object
+NuButton | NUButton | String name, NuPoint point, int width, int height, Runnable action | =
+setAction | void | Runnable action | sets action of NuButton
+
+#### NuTextfield
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+NuTextfield | NuTextfield | String text, NuPoint point | constructs a NuTextfield object
+NuTextfield | NuTextfield | String text, NuPoint point, int width, int height | =
+setText | void | String text | sets text of NuTextfield
+getText | String | none | retuns text from NuTextfield
+
+### NuUtils
+Method | Return Type | Arguments | Description
+-------|-------------|-----------|------------
+sleep | void | int ms | sleeps thread for ms milliseconds
+sleep | void | none | sleeps thread for one NuWindow cycle
+fileSelector | File | none | opens file selector (single file)
+multiFileSelector | File[] | none | opens file selector (multiple files)
+fileSaver | File | none | opens file selector (single file, may create new file)
