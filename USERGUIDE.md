@@ -7,8 +7,9 @@
  
 
  <details>
-    <summary> * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing) </summary>
+    <summary>Iporting and Using Nu-Swing </summary>
 
+ * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
    + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
      - [Common Error Messages](#common-error-messages)
        * [Some expected error messages related to compilation:](#some-expected-error-messages-related-to-compilation-)
@@ -19,12 +20,10 @@
 
  </details>
 
- * [Making a Shape](#making-a-shape)
-
  <details>
-  <summary>click to expand</summary>
+  <summary>Making a Shape</summary>
 
- 
+  * [Making a Shape](#making-a-shape) 
    + [What Shapes Exist?](#what-shapes-exist-)
    + [How to Add a Shape to a NuWindow](#how-to-add-a-shape-to-a-nuwindow)
 
@@ -34,18 +33,20 @@
  * [Using NuTextfield](#using-nutextfield)
  * [Moving an Object](#moving-an-object)
  * [NuUtils](#nuutils)
- * [API Overview](#api-overview)
+ 
 
    <details>
-     <summary>click to expand</summary>
-
+     <summary>API Overview</summary>
+ 
+  * [API Overview](#api-overview)
    + [Nuwindow](#nuwindow)
    + [NuColor](#nucolor)
-   + [NuComponent (abstract)](#nucomponent--abstract-)
+   
 
      <details>
-       <summary>click to expand</summary>
-
+       <summary>NuComponent</summary>
+ 
+   + [NuComponent (abstract)](#nucomponent--abstract-)
      - [NuShape (abstract) - (NuComponent)](#nushape--abstract-----nucomponent-)
        * [NuPoint - (NuShape)](#nupoint----nushape-)
        * [NuLine - (NuShape)](#nuline----nushape-)
