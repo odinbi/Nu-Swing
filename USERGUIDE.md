@@ -4,10 +4,14 @@
 <details>
  <summary><b>ToC</b> (click to open)</summary>
  
- * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
+ 
 
  <details>
-    <summary>click to expand</summary>
+    <summary>
+
+* [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
+
+</summary>
 
    + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
      - [Common Error Messages](#common-error-messages)
