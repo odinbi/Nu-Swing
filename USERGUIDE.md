@@ -36,20 +36,19 @@
  
 
  <details>
-  <summary>API Overview</summary>
- 
-   * [API Overview](#api-overview)
-    + [Nuwindow](#nuwindow)
-    + [NuColor](#nucolor)
+ <summary>API Overview</summary>
 
+ * [API Overview](#api-overview)
+  + [Nuwindow](#nuwindow)
+  + [NuColor](#nucolor)
 
       <details>
       <summary>NuComponent</summary>
 
       + [NuComponent (abstract)](#nucomponent--abstract-)
 
-           <details>
-            <summary>NuShape</summary>
+        <details>
+        <summary>NuShape</summary>
 
         - [NuShape (abstract) - (NuComponent)](#nushape--abstract-----nucomponent-)
           * [NuPoint - (NuShape)](#nupoint----nushape-)
@@ -59,7 +58,7 @@
           * [NuPolygon - (NuShape)](#nupolygon----nushape-)
           * [NuText - (NuShape)](#nutext----nushape-)
 
-           </details>
+        </details>
 
         - [NuButton - (NuComponent)](#nubutton----nucomponent-)
         - [NuTextfield - (NuComponent)](#nutextfield----nucomponent-)
