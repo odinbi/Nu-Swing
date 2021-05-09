@@ -6,6 +6,10 @@
  
  - [USER GUIDE](#user-guide)
    * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
+
+     <details>
+      <summary>click to expand</summary>
+
      + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
        - [Common Error Messages](#common-error-messages)
          * [Some expected error messages related to compilation:](#some-expected-error-messages-related-to-compilation-)
@@ -13,6 +17,9 @@
      + [Add the Classpath to Environmental Variables](#add-the-classpath-to-environmental-variables)
        - [For Windows Users](#for-windows-users)
      + [Using an IDE to Add a Library to Classpath](#using-an-ide-to-add-a-library-to-classpath)
+
+     </details>
+
    * [Making a Shape](#making-a-shape)
      + [What Shapes Exist?](#what-shapes-exist-)
      + [How to Add a Shape to a NuWindow](#how-to-add-a-shape-to-a-nuwindow)
