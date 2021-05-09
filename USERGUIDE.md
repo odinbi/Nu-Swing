@@ -2,7 +2,7 @@
 
 ## Table of Contents
 <details>
- <summary><b>ToC</b> (click to open)</summary>
+ <summary>(click to open)</summary>
  
  
 
