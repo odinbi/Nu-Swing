@@ -1,6 +1,6 @@
 # USER GUIDE
 ## Iporting and Using Nu-Swing
-Firstly, and most importantly, download NuSwing.jar from [GitHub](https://github.com/odinbi/Nu-Swing).
+Firstly, and most importantly, download `NuSwing.jar` from [GitHub](https://github.com/odinbi/Nu-Swing).
 After `NuSwing.jar` is downloaded, make sure to place it in a folder you will remember, or place it in the same folder as your program.
 
 `NuSwing.jar` located in the `jarfolder`:
