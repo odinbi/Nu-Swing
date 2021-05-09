@@ -4,43 +4,63 @@
 <details>
  <summary><b>ToC</b> (click to open)</summary>
  
- - [USER GUIDE](#user-guide)
-   * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
+ * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
+
+ <details>
+    <summary>click to expand</summary>
+
+   + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
+     - [Common Error Messages](#common-error-messages)
+       * [Some expected error messages related to compilation:](#some-expected-error-messages-related-to-compilation-)
+       * [Some expected error messages related to running:](#some-expected-error-messages-related-to-running-)
+   + [Add the Classpath to Environmental Variables](#add-the-classpath-to-environmental-variables)
+     - [For Windows Users](#for-windows-users)
+   + [Using an IDE to Add a Library to Classpath](#using-an-ide-to-add-a-library-to-classpath)
+
+ </details>
+
+ * [Making a Shape](#making-a-shape)
+
+ <details>
+  <summary>click to expand</summary>
+
+ 
+   + [What Shapes Exist?](#what-shapes-exist-)
+   + [How to Add a Shape to a NuWindow](#how-to-add-a-shape-to-a-nuwindow)
+
+ </details>
+
+ * [Making a Button](#making-a-button)
+ * [Using NuTextfield](#using-nutextfield)
+ * [Moving an Object](#moving-an-object)
+ * [NuUtils](#nuutils)
+ * [API Overview](#api-overview)
+
+   <details>
+     <summary>click to expand</summary>
+
+   + [Nuwindow](#nuwindow)
+   + [NuColor](#nucolor)
+   + [NuComponent (abstract)](#nucomponent--abstract-)
 
      <details>
-      <summary>click to expand</summary>
+       <summary>click to expand</summary>
 
-     + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
-       - [Common Error Messages](#common-error-messages)
-         * [Some expected error messages related to compilation:](#some-expected-error-messages-related-to-compilation-)
-         * [Some expected error messages related to running:](#some-expected-error-messages-related-to-running-)
-     + [Add the Classpath to Environmental Variables](#add-the-classpath-to-environmental-variables)
-       - [For Windows Users](#for-windows-users)
-     + [Using an IDE to Add a Library to Classpath](#using-an-ide-to-add-a-library-to-classpath)
+     - [NuShape (abstract) - (NuComponent)](#nushape--abstract-----nucomponent-)
+       * [NuPoint - (NuShape)](#nupoint----nushape-)
+       * [NuLine - (NuShape)](#nuline----nushape-)
+       * [NuCircle - (NuShape)](#nucircle----nushape-)
+       * [NuRectangle - (NuShape)](#nurectangle----nushape-)
+       * [NuPolygon - (NuShape)](#nupolygon----nushape-)
+       * [NuText - (NuShape)](#nutext----nushape-)
+     - [NuButton - (NuComponent)](#nubutton----nucomponent-)
+     - [NuTextfield - (NuComponent)](#nutextfield----nucomponent-)
 
      </details>
 
-   * [Making a Shape](#making-a-shape)
-     + [What Shapes Exist?](#what-shapes-exist-)
-     + [How to Add a Shape to a NuWindow](#how-to-add-a-shape-to-a-nuwindow)
-   * [Making a Button](#making-a-button)
-   * [Using NuTextfield](#using-nutextfield)
-   * [Moving an Object](#moving-an-object)
-   * [NuUtils](#nuutils)
-   * [API Overview](#api-overview)
-     + [Nuwindow](#nuwindow)
-     + [NuColor](#nucolor)
-     + [NuComponent (abstract)](#nucomponent--abstract-)
-       - [NuShape (abstract) - (NuComponent)](#nushape--abstract-----nucomponent-)
-         * [NuPoint - (NuShape)](#nupoint----nushape-)
-         * [NuLine - (NuShape)](#nuline----nushape-)
-         * [NuCircle - (NuShape)](#nucircle----nushape-)
-         * [NuRectangle - (NuShape)](#nurectangle----nushape-)
-         * [NuPolygon - (NuShape)](#nupolygon----nushape-)
-         * [NuText - (NuShape)](#nutext----nushape-)
-       - [NuButton - (NuComponent)](#nubutton----nucomponent-)
-       - [NuTextfield - (NuComponent)](#nutextfield----nucomponent-)
-     + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
+   + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
+
+   </details>
 
 </details>
 
