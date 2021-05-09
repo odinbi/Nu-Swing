@@ -2,8 +2,8 @@
 
 ## Table of Contents
 <toc>
- <summary>ToC</summary>
- <br>
+ <summary><b>ToC</b> (click to open)</summary>
+ 
  - [USER GUIDE](#user-guide)
    * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
      + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
