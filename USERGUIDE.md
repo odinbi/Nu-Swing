@@ -1,7 +1,7 @@
 # USER GUIDE
 
 ## Table of Contents
-<toc>
+<details>
  <summary><b>ToC</b> (click to open)</summary>
  
  - [USER GUIDE](#user-guide)
@@ -34,7 +34,8 @@
        - [NuButton - (NuComponent)](#nubutton----nucomponent-)
        - [NuTextfield - (NuComponent)](#nutextfield----nucomponent-)
      + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
-</toc>
+
+</details>
 
 
 ## Iporting and Using Nu-Swing
