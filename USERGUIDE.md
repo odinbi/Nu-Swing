@@ -20,54 +20,55 @@
 
    </details>
 
- <details>
-  <summary>Making a Shape</summary>
+ * [Making a Shape](#making-a-shape)
 
- * [Making a Shape](#making-a-shape) 
-   + [What Shapes Exist?](#what-shapes-exist-)
-   + [How to Add a Shape to a NuWindow](#how-to-add-a-shape-to-a-nuwindow)
+   <details>
+   <summary>(expand)</summary>
 
- </details>
+     + [What Shapes Exist?](#what-shapes-exist-)
+     + [How to Add a Shape to a NuWindow](#how-to-add-a-shape-to-a-nuwindow)
+
+   </details>
 
  * [Making a Button](#making-a-button)
  * [Using NuTextfield](#using-nutextfield)
  * [Moving an Object](#moving-an-object)
  * [NuUtils](#nuutils)
  
-
- <details>
- <summary>API Overview</summary>
-
  * [API Overview](#api-overview)
-  + [Nuwindow](#nuwindow)
-  + [NuColor](#nucolor)
 
-      <details>
-      <summary>NuComponent</summary>
+   <details>
+   <summary>(expand)</summary>
 
-      + [NuComponent (abstract)](#nucomponent--abstract-)
+    + [Nuwindow](#nuwindow)
+    + [NuColor](#nucolor)
+    + [NuComponent (abstract)](#nucomponent--abstract-)
 
-        <details>
-        <summary>NuShape</summary>
+       <details>
+       <summary>(expand)</summary>
+ 
+         - [NuShape (abstract) - (NuComponent)](#nushape--abstract-----nucomponent-) 
 
-        - [NuShape (abstract) - (NuComponent)](#nushape--abstract-----nucomponent-)
-          * [NuPoint - (NuShape)](#nupoint----nushape-)
-          * [NuLine - (NuShape)](#nuline----nushape-)
-          * [NuCircle - (NuShape)](#nucircle----nushape-)
-          * [NuRectangle - (NuShape)](#nurectangle----nushape-)
-          * [NuPolygon - (NuShape)](#nupolygon----nushape-)
-          * [NuText - (NuShape)](#nutext----nushape-)
+           <details>
+           <summary>(expand)</summary>
 
-        </details>
+             * [NuPoint - (NuShape)](#nupoint----nushape-)
+             * [NuLine - (NuShape)](#nuline----nushape-)
+             * [NuCircle - (NuShape)](#nucircle----nushape-)
+             * [NuRectangle - (NuShape)](#nurectangle----nushape-)
+             * [NuPolygon - (NuShape)](#nupolygon----nushape-)
+             * [NuText - (NuShape)](#nutext----nushape-)
 
-        - [NuButton - (NuComponent)](#nubutton----nucomponent-)
-        - [NuTextfield - (NuComponent)](#nutextfield----nucomponent-)
+           </details>
 
-      </details>
+         - [NuButton - (NuComponent)](#nubutton----nucomponent-)
+         - [NuTextfield - (NuComponent)](#nutextfield----nucomponent-)
 
-   + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
+       </details>
 
- </details>
+     + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
+
+   </details>
 </details>
 
 
