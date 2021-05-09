@@ -63,10 +63,9 @@
 
         </details>
 
+  + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
+
  </details>
-
-   + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
-
 </details>
 
 
