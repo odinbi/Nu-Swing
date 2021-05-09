@@ -1,4 +1,37 @@
 # USER GUIDE
+
+## ToC
+- [USER GUIDE](#user-guide)
+  * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
+    + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
+      - [Common Error Messages](#common-error-messages)
+        * [Some expected error messages related to compilation:](#some-expected-error-messages-related-to-compilation-)
+        * [Some expected error messages related to running:](#some-expected-error-messages-related-to-running-)
+    + [Add the Classpath to Environmental Variables](#add-the-classpath-to-environmental-variables)
+      - [For Windows Users](#for-windows-users)
+    + [Using an IDE to Add a Library to Classpath](#using-an-ide-to-add-a-library-to-classpath)
+  * [Making a Shape](#making-a-shape)
+    + [What Shapes Exist?](#what-shapes-exist-)
+    + [How to Add a Shape to a NuWindow](#how-to-add-a-shape-to-a-nuwindow)
+  * [Making a Button](#making-a-button)
+  * [Using NuTextfield](#using-nutextfield)
+  * [Moving an Object](#moving-an-object)
+  * [NuUtils](#nuutils)
+  * [API Overview](#api-overview)
+    + [Nuwindow](#nuwindow)
+    + [NuColor](#nucolor)
+    + [NuComponent (abstract)](#nucomponent--abstract-)
+      - [NuShape (abstract) - (NuComponent)](#nushape--abstract-----nucomponent-)
+        * [NuPoint - (NuShape)](#nupoint----nushape-)
+        * [NuLine - (NuShape)](#nuline----nushape-)
+        * [NuCircle - (NuShape)](#nucircle----nushape-)
+        * [NuRectangle - (NuShape)](#nurectangle----nushape-)
+        * [NuPolygon - (NuShape)](#nupolygon----nushape-)
+        * [NuText - (NuShape)](#nutext----nushape-)
+      - [NuButton - (NuComponent)](#nubutton----nucomponent-)
+      - [NuTextfield - (NuComponent)](#nutextfield----nucomponent-)
+    + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
+
 ## Iporting and Using Nu-Swing
 Firstly, and most importantly, download `NuSwing.jar` from [GitHub](https://github.com/odinbi/Nu-Swing).
 After `NuSwing.jar` is downloaded, make sure to place it in a folder you will remember, or place it in the same folder as your program.
