@@ -58,6 +58,9 @@
        * [NuRectangle - (NuShape)](#nurectangle----nushape-)
        * [NuPolygon - (NuShape)](#nupolygon----nushape-)
        * [NuText - (NuShape)](#nutext----nushape-)
+
+        </details>
+
      - [NuButton - (NuComponent)](#nubutton----nucomponent-)
      - [NuTextfield - (NuComponent)](#nutextfield----nucomponent-)
 
