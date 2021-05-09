@@ -5,20 +5,20 @@
  <summary>(click to open)</summary>
  
  
-
- <details>
-    <summary>Iporting and Using Nu-Swing </summary>
-
  * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
-   + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
-     - [Common Error Messages](#common-error-messages)
-       * [Some expected error messages related to compilation:](#some-expected-error-messages-related-to-compilation-)
-       * [Some expected error messages related to running:](#some-expected-error-messages-related-to-running-)
-   + [Add the Classpath to Environmental Variables](#add-the-classpath-to-environmental-variables)
-     - [For Windows Users](#for-windows-users)
-   + [Using an IDE to Add a Library to Classpath](#using-an-ide-to-add-a-library-to-classpath)
 
- </details>
+   <details>
+      <summary>(expand)</summary>
+
+     + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
+       - [Common Error Messages](#common-error-messages)
+         * [Some expected error messages related to compilation:](#some-expected-error-messages-related-to-compilation-)
+         * [Some expected error messages related to running:](#some-expected-error-messages-related-to-running-)
+     + [Add the Classpath to Environmental Variables](#add-the-classpath-to-environmental-variables)
+       - [For Windows Users](#for-windows-users)
+     + [Using an IDE to Add a Library to Classpath](#using-an-ide-to-add-a-library-to-classpath)
+
+   </details>
 
  <details>
   <summary>Making a Shape</summary>
