@@ -44,7 +44,7 @@ or
 $ javac -cp "./jarfolder/*" MyWindow.java
 ```
 
-Note that in windows, path names are written with backslashes, `\`, but Unix uses slashes, `/`, i used. If there would be several files needed in the `jarfolder` it would be possible to add an asterisk instead of directing the compiler to a specific file, e.g. `./jarfolder/*`.
+Note that in *Windows*, path names are written with backslashes, `\`, and slashes `/` in *Unix*. If there would be several files needed in the `jarfolder` it would be possible to add an asterisk instead of directing the compiler to a specific file, e.g. `./jarfolder/*`.
 
 After having compiled the program, we now want to run it. To do that we want to use the `java` command in the terminal with the `-cp` command again. This time we need to make sure to tell java where to find the main method, i.e. where `MyWindow.class` is. This means, we need to tell java where both `NuSwing.jar` and `MyWindow.class` is. Since we need two paths we also need a separator to separate the paths, in windows `;` is used, in unix `:`.
 
