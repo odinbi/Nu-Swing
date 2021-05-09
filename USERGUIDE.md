@@ -7,11 +7,7 @@
  
 
  <details>
-    <summary>
-
-* [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing)
-
-</summary>
+    <summary> * [Iporting and Using Nu-Swing](#iporting-and-using-nu-swing) </summary>
 
    + [Compile and Run Using the Classpath Option](#compile-and-run-using-the-classpath-option)
      - [Common Error Messages](#common-error-messages)
