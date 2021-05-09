@@ -141,7 +141,13 @@ As shown in the `MyWindow` example above, making a simple `window` is very easy 
 
 A `shape` in *Nu-Swing* is any class that extends `NuShape`.
 
-There are six concrete `shapes` in *Nu-Swing*: `NuPoint, NuLine, NuCircle, NuRectangle, NuPolygon` and `NuText`.
+There are six concrete `shapes` in *Nu-Swing*:
+* `NuPoint` 
+* `NuLine`
+* `NuCircle`
+* `NuRectangle` 
+* `NuPolygon`
+* `NuText`.
 
 ### How to Add a Shape to a NuWindow
 
