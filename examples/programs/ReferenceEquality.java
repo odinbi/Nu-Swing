@@ -1,6 +1,6 @@
 import NuSwing.*;
 
-public class RefEquality{
+public class ReferenceEquality{
     public static void main(String[] args){
         NuWindow nw = new NuWindow(400, 400);
         NuPoint pt = new NuPoint(250, 200);
