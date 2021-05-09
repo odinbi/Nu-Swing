@@ -114,3 +114,160 @@ Using the classpath option with long arguments for every compilation and run cal
 #### For Windows Users
 
 To add a environmental variable we need to access the `Environmental variables` panel in *Windows*. To access this panel we need to open the `This PC` &#8594; `Properties` &#8594; `Advanced System Settings` &#8594; `Environmental Variables`.
+
+Alternatively, use the `windows` key on your keyboard and type `environment variables`. You may not need to type everything out before one of the matches shows `Edit the system environment variables`. Note that if your PC is set to a different language than English, you might have to use the corresponding name in that language, e.g. `miljøvariabler` in Norwegian.
+
+Now that we found the panel we can go ahead and add the `classpath`. If there is no `classpath` variable under the `User variables for <Username>` click `New...` and name it `classpath`. If it exist then click `Edit...`. Now add the path to the `jar` file including the name of the `jar` file. Remember to add separators, `;`, between paths, and to add the the current directory address, `.`, at the end. The variable value should look something like this: `D:\jarjars\NuSwing.jar;.`.
+
+It should look something like this:
+
+![envVars](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/envVars.PNG)
+
+Since we now have added both the `NuSwing.jar` and `.` to the `classpath variable`, we should be able to compile and run the program without adding any extra options:
+
+```
+> javac MyWindow.java
+> java MyWindow
+```
+
+### Using an IDE to Add a Library to Classpath
+
+Many IDE's, such as *Eclipse* and *IntelliJ*, allows users to add `jar` libraries to the internal `classpath`. As such, if you are using an IDE for *Java*, it may be easier to use the tools the IDE offers to add the library. Thus, it's recommended to look up how to add a `jar` file to the `classpath` of your preferred IDE.
+
+## Making a Shape
+As shown in the `MyWindow` example above, making a simple `window` is very easy in *Nu-Swing*. Now we will take a look on how to make a simple `shape` with *Nu-Swing* and display it in the `window`.
+
+### What Shapes Exist?
+
+A `shape` in *Nu-Swing* is any class that extends `NuShape`.
+
+There are six concrete `shapes` in *Nu-Swing*: `NuPoint, NuLine, NuCircle, NuRectangle, NuPolygon` and `NuText`.
+
+### How to Add a Shape to a NuWindow
+
+We will reuse the code from `MyWindow` and add to it.
+
+The class `MyShape` adds a `NuRectangle` to a `NuWindow`:
+
+```java
+import NuSwing.NuWindow;
+import NuSwing.NuRectangle;
+import NuSwing.NuPoint;
+import NuSwing.NuColor;
+
+public class MyShape {
+
+    public static void main(String[] args){
+        NuWindow myWindow = new NuWindow("My Window", 400, 400);
+        NuPoint myPoint = new NuPoint(100, 200);
+        NuRectangle myRect = new NuRectangle(200, 100, myPoint, NuColor.WHITE);
+
+        myRect.setOutlineColor(NuColor.BLACK);
+
+        myWindow.addComponent(myRect);
+    }
+}
+```
+
+The ressult of running `MyShape`:
+
+[MyShape run](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/MyShape.PNG)
+
+## Making a Button
+
+The `NuButton` provides the button functionality to *Nu-Swing*. To create a button, one simply creates a `NuButton` object and add it to the `NuWindow`. There are two ways of adding functionality to the `button`. Either by the `setAction` method, or as an argument in the `constructor`. Lets look at a simple button example using both methods.
+
+A simple `Hello World!` button. `ButtonExample` alternative 1:
+
+```java
+import NuSwing.*;
+
+public class ButtonExample {
+  public static void main(String[] args){
+    NuWindow nw = new NuWindow("Button Example",
+      200, 200);
+
+    NuButton nb = new NuButton("Button",
+      new NuPoint(50, 75), 100, 50, 
+      () -> System.out.println("Hello World!"));
+
+    nw.addComponent(nb);
+  }
+}
+```
+
+`ButtonExample` alternative 2:
+
+```java
+import NuSwing.*;
+
+public class ButtonExample {
+  public static void main(String[] args){
+    NuWindow nw = new NuWindow("Button Example",
+      200, 200);
+
+    NuButton nb = new NuButton("Button",
+      new NuPoint(50, 75), 100, 50);
+    nb.setAction(
+      () -> System.out.println("Hello World!"));
+    nw.addComponent(nb);
+  }
+}
+```
+
+Result of running `ButtonExample`:
+
+[ButtonExample](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/ButtonExample.PNG)
+
+When pressed:
+
+```
+> Hello World!
+```
+
+Furthermore, `NuButton` has some other features that might be worth mentioning. Giving `NuButton` and `empty function` will result in a button that can be clicked but does nothing.
+
+```java
+// the empty function
+button.setAction(() -> ());
+```
+
+Giving `NuButton` no function,  `null`, will result in an inactive button that cannot be clicked.
+
+```java
+// no function
+button.setAction(null);
+```
+
+## Using NuTextfield
+
+NuTextfield mainly relies on two methods, `getText` and `setText`. Like the other components we have seen, it's simple to create a `NuTextfield`, create the object and add it to the `NuWindow`.
+
+Transfer text from sender to receiver when button is pressed:
+
+```java
+import NuSwing.*;
+
+public class TextfieldExample {
+  public static void main(String[] args){
+    NuWindow nw = new NuWindow("TF Example", 350, 250);
+
+    NuTextfield sender = new NuTextfield("sender",
+      new NuPoint(75, 175));
+    NuTextfield receiver = new NuTextfield("receiver",
+      new NuPoint(175, 175));
+
+    NuButton btn = new NuButton("submit",
+      new NuPoint(120, 100), 100, 50,
+      () -> receiver.setText(sender.getText()));
+    nw.addComponent(sender); nw.addComponent(receiver);
+    nw.addComponent(btn);
+  }
+}
+```
+
+Running `TextfieldExample` result:
+
+[TextfieldExample](https://github.com/odinbi/Nu-Swing/blob/main/examples/images/TextfieldExample.png)
+
+## Moving an Object
