@@ -66,7 +66,7 @@
 
        </details>
 
-     + [NuUtils](#nuutils)
+     + [NuUtils](#nuutils-1)
 
    </details>
 </details>
