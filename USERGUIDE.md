@@ -532,7 +532,7 @@ NuTextfield | NuTextfield | String text, NuPoint point, int width, int height | 
 setText | void | String text | sets text of NuTextfield
 getText | String | none | retuns text from NuTextfield
 
-### NuUtils - (NuComponent)
+### NuUtils
 Method | Return Type | Arguments | Description
 -------|-------------|-----------|------------
 sleep | void | int ms | sleeps thread for ms milliseconds
