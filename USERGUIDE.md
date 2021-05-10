@@ -66,7 +66,7 @@
 
        </details>
 
-     + [NuUtils - (NuComponent)](#nuutils----nucomponent-)
+     + [NuUtils](#nuutils)
 
    </details>
 </details>
