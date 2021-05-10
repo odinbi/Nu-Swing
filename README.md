@@ -18,6 +18,6 @@ From a blog-post on the oracle website about the [naming of *Swing*](https://blo
 
 Since *Swing* is named after the Jazz genre of Swing, and *Nu-Swing* is based on *Swing*, I thought it would be fun to do a little play on the name and continue the "tradition". 
 
-As it happens there is genre called Nu Swing, also refered to as Neo Swing or Swing Revival, or more commonly Electro Swing. Of all these names I thought *Nu-Swing* sounded the best, and thus *Nu-Swing* got the name.
+As it happens there is genre called Nu Swing, also referred to as Neo Swing or Swing Revival, or more commonly Electro Swing. Of all these names I thought *Nu-Swing* sounded the best, and thus *Nu-Swing* got the name.
 
 Let's get *Nu-Swinging*: [Lone Digger by Caravan Palace](https://youtu.be/UbQgXeY_zi4)
