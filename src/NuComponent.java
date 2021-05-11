@@ -27,7 +27,7 @@ public abstract class NuComponent{
         this.window = window;
     }
 
-    protected boolean remove(){
+    public boolean remove(){
         return this.window.remove(this);
     }
 
