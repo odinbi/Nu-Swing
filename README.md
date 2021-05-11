@@ -6,6 +6,7 @@ Nu-Swing is a GUI toolkit in Java based on Swing, made for students who are gett
 * [Source Code](https://github.com/odinbi/Nu-Swing/tree/main/src)
 * [NuSwing.jar](https://github.com/odinbi/Nu-Swing/tree/main/dist/lib)
 * [User Guide](https://github.com/odinbi/Nu-Swing/blob/main/USERGUIDE.md)
+* [The Wiki](https://github.com/odinbi/Nu-Swing/wiki/Home)
 * [Some Short Example Programs](https://github.com/odinbi/Nu-Swing/tree/main/examples/programs)
 
 ## The Name "Nu-Swing"
