@@ -66,4 +66,8 @@ public class NuButton extends NuComponent {
     public void setVisible(boolean visible){
         button.setVisible(visible);
     }
+
+    public void setName(String name){
+        button.setName(name);
+    }
 }
