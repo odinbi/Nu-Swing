@@ -83,7 +83,7 @@ After `NuSwing.jar` is downloaded, make sure to place it in a folder you will re
 After having downloaded and placed the `NuSwing.jar` file in a known folder, lets start by making a very simple program using `NuWindow` from the *Nu-Swing* package.
 
 ```java
-import NuSwing.NuWindow;
+import nuswing.NuWindow;
 
 public class MyWindow {
     public static void main(String[] args){
@@ -229,10 +229,10 @@ We will reuse the code from `MyWindow` and add to it.
 The class `MyShape` adds a `NuRectangle` to a `NuWindow`:
 
 ```java
-import NuSwing.NuWindow;
-import NuSwing.NuRectangle;
-import NuSwing.NuPoint;
-import NuSwing.NuColor;
+import nuswing.NuWindow;
+import nuswing.NuRectangle;
+import nuswing.NuPoint;
+import nuswing.NuColor;
 
 public class MyShape {
 
@@ -259,7 +259,7 @@ The `NuButton` provides the button functionality to *Nu-Swing*. To create a butt
 A simple `Hello World!` button. `ButtonExample` alternative 1:
 
 ```java
-import NuSwing.*;
+import nuswing.*;
 
 public class ButtonExample {
   public static void main(String[] args){
@@ -278,7 +278,7 @@ public class ButtonExample {
 `ButtonExample` alternative 2:
 
 ```java
-import NuSwing.*;
+import nuswing.*;
 
 public class ButtonExample {
   public static void main(String[] args){
@@ -325,7 +325,7 @@ NuTextfield mainly relies on two methods, `getText` and `setText`. Like the othe
 Transfer text from sender to receiver when button is pressed:
 
 ```java
-import NuSwing.*;
+import nuswing.*;
 
 public class TextfieldExample {
   public static void main(String[] args){
@@ -357,7 +357,7 @@ There are mainly two ways of moving an object in *Nu-Swing*, either call `move` 
 `move` the `NuCircle` to a new location when the `NuButton` is pressed with `NuLine` attached:
 
 ```java
-import NuSwing.*;
+import nuswing.*;
 
 public class MoveCircle {
    public static void main(String[] args){
@@ -384,7 +384,7 @@ As seen above, only the `NuPoint` that is also referenced in `nc` is moved.
 Same example, but `move` is called on `NuLine` instead:
 
 ```java
-import NuSwing.*;
+import nuswing.*;
 
 public class MoveLine {
    public static void main(String[] args){
