@@ -1,4 +1,4 @@
-package NuSwing;
+package nuswing;
 
 import javax.swing.JPanel;
 import javax.swing.JTextField;

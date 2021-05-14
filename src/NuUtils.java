@@ -1,4 +1,4 @@
-package NuSwing;
+package nuswing;
 
 import java.io.File;
 import java.io.IOException;

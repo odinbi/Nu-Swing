@@ -1,4 +1,4 @@
-package NuSwing;
+package nuswing;
 
 import java.awt.*;
 import javax.swing.*;

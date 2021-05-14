@@ -1,4 +1,4 @@
-package NuSwing;
+package nuswing;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -6,7 +6,6 @@ import java.awt.BasicStroke;
 
 public class NuPolygon extends NuShape {
     private NuPoint[] points;
-    private NuColor color;
     private int[] xPoints;
     private int[] yPoints;
 

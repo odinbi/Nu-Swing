@@ -1,4 +1,4 @@
-package NuSwing;
+package nuswing;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -7,7 +7,6 @@ import java.awt.BasicStroke;
 public class NuRectangle extends NuShape {
     private float width;
     private float height;
-    private float angle;
 
     // constructors
     public NuRectangle (float width, float height){

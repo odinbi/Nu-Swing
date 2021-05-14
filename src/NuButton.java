@@ -1,4 +1,4 @@
-package NuSwing;
+package nuswing;
 
 import javax.swing.JPanel;
 import javax.swing.JButton;
@@ -68,6 +68,7 @@ public class NuButton extends NuComponent {
     }
 
     public void setName(String name){
+        this.name = name;
         button.setName(name);
     }
 }
