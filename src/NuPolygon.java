@@ -41,7 +41,7 @@ public class NuPolygon extends NuShape {
     protected void draw(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
 
-        if(xPoints.length != points.length)
+        if(xPoints == null)
             convertPointsToArrays();
 
         g2d.setPaintMode();
@@ -58,8 +58,6 @@ public class NuPolygon extends NuShape {
         g2d.setStroke(new BasicStroke(lineWidth));
         g2d.setColor(this.outline);
         g2d.drawPolygon(xPoints, yPoints, points.length);
-
-        g2d.dispose();
     }
 
     @Override
